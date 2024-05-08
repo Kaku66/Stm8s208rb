@@ -10,7 +10,7 @@ uint8_t minuly_stav2=1; // zde si budeme ukládat minulý stav tlaèítka (1=tla
 uint8_t aktualni_stav2=1;
 
 void main(void){
-CLK_HSIPrescalerConfig(CLK_PRESCALER_HSIDIV1); // 16MHz z interního RC oscilátoru
+CLK_HSIPrescalerConfig(CLK_PRESCALER_HSIDIV1); 
 init_milis();
 GPIO_Init(GPIOB, GPIO_PIN_ALL, GPIO_MODE_OUT_PP_LOW_SLOW);
 GPIO_Init(GPIOD, GPIO_PIN_5, GPIO_MODE_IN_FL_NO_IT);
