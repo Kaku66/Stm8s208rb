@@ -11,7 +11,7 @@ uint8_t x = 0;
 
 
 void main(void){
-CLK_HSIPrescalerConfig(CLK_PRESCALER_HSIDIV1); // 16MHz z interního RC oscilátoru
+CLK_HSIPrescalerConfig(CLK_PRESCALER_HSIDIV1);
 pushpull; // nastavíme PC5 jako výstup typu push-pull (LEDka)
 tlacitko; // nastavíme PE4 jako vstup (tlaèítko)
 
