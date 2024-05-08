@@ -6,7 +6,7 @@ uint8_t aktualni_stav=0;  // zde si budeme ukládat aktuální stav tlaèítka (
 uint8_t stav_ledky=0;
 
 void main(void){
-CLK_HSIPrescalerConfig(CLK_PRESCALER_HSIDIV1); // 16MHz z interního RC oscilátoru
+CLK_HSIPrescalerConfig(CLK_PRESCALER_HSIDIV1);
 init_milis(); 
 GPIO_Init(GPIOB,GPIO_PIN_0,GPIO_MODE_OUT_PP_LOW_SLOW);
 GPIO_Init(GPIOB, GPIO_PIN_1,GPIO_MODE_IN_FL_NO_IT);
